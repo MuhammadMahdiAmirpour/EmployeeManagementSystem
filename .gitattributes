@@ -1,21 +1,31 @@
-# Ignore all files
-* linguist-vendored
+# Default to auto-detect
+* linguist-detectable=auto
 
-# Un-ignore C# files
-*.cs linguist-vendored=false
+# Explicitly mark C# files
 *.cs linguist-detectable=true
 *.cs linguist-language=C#
 
-# Explicitly ignore HTML and CSS files
-*.html linguist-vendored=true
-*.html linguist-generated=true
-*.html linguist-documentation=true
-*.htm linguist-vendored=true
-*.htm linguist-generated=true
-*.htm linguist-documentation=true
-*.css linguist-vendored=true
-*.css linguist-generated=true
-*.css linguist-documentation=true
-*.ejs linguist-vendored=true
-*.ejs linguist-generated=true
-*.ejs linguist-documentation=true
+# Dockerfile
+Dockerfile linguist-detectable=true
+
+# YAML files (often used for CI/CD configurations)
+*.yml linguist-detectable=true
+*.yaml linguist-detectable=true
+
+# JSON files
+*.json linguist-detectable=true
+
+# Markdown files
+*.md linguist-detectable=true
+
+# Shell scripts
+*.sh linguist-detectable=true
+
+# PowerShell scripts
+*.ps1 linguist-detectable=true
+
+# Explicitly ignore HTML, CSS, and related files
+*.html linguist-detectable=false
+*.htm linguist-detectable=false
+*.css linguist-detectable=false
+*.ejs linguist-detectable=false
