@@ -4,6 +4,9 @@
 # Explicitly mark C# files as C#
 *.cs linguist-language=C# linguist-detectable=true
 
+# Mark Razor files as C#
+*.razor linguist-language=C# linguist-detectable=true
+
 # Force-ignore HTML and CSS files
 *.html linguist-language=none linguist-vendored=true linguist-generated=true linguist-documentation=true
 *.htm linguist-language=none linguist-vendored=true linguist-generated=true linguist-documentation=true
