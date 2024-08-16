@@ -3,3 +3,4 @@
 *.htm linguist-detectable=false
 *.ejs linguist-detectable=false
 *.html linguist-language=plaintext
+*.html linguist-vendored=true
