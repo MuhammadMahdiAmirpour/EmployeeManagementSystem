@@ -1,14 +1,21 @@
-# Include all files by default
-* linguist-detectable=true
+# Treat all files as binary, effectively ignoring them for language statistics
+* -text
 
-# Explicitly exclude HTML, CSS, and related files
-*.html linguist-detectable=false
-*.htm linguist-detectable=false
-*.css linguist-detectable=false
-*.ejs linguist-detectable=false
+# Explicitly mark C# files as text and C#
+*.cs text linguist-language=C#
 
-# Ensure C# is correctly detected
-*.cs linguist-language=C#
+# Mark HTML and related files as binary to exclude them
+*.html binary
+*.htm binary
+*.css binary
+*.ejs binary
 
-# Ensure Dockerfile is correctly detected
-Dockerfile linguist-language=Dockerfile
+# Explicitly include other file types you want to see
+Dockerfile text
+*.yml text
+*.yaml text
+*.json text
+*.md text
+*.sh text
+*.ps1 text
+# Add any other file extensions you want to include
