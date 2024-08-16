@@ -1,5 +1,7 @@
 # Treat everything as binary (not text) by default
 * binary
+*.html binary
+
 
 # Explicitly mark C# files as C#
 *.cs linguist-language=C# linguist-detectable=true
