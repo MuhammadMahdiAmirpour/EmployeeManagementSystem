@@ -1,31 +1,14 @@
-# Default to auto-detect
-* linguist-detectable=auto
+# Include all files by default
+* linguist-detectable=true
 
-# Explicitly mark C# files
-*.cs linguist-detectable=true
-*.cs linguist-language=C#
-
-# Dockerfile
-Dockerfile linguist-detectable=true
-
-# YAML files (often used for CI/CD configurations)
-*.yml linguist-detectable=true
-*.yaml linguist-detectable=true
-
-# JSON files
-*.json linguist-detectable=true
-
-# Markdown files
-*.md linguist-detectable=true
-
-# Shell scripts
-*.sh linguist-detectable=true
-
-# PowerShell scripts
-*.ps1 linguist-detectable=true
-
-# Explicitly ignore HTML, CSS, and related files
+# Explicitly exclude HTML, CSS, and related files
 *.html linguist-detectable=false
 *.htm linguist-detectable=false
 *.css linguist-detectable=false
 *.ejs linguist-detectable=false
+
+# Ensure C# is correctly detected
+*.cs linguist-language=C#
+
+# Ensure Dockerfile is correctly detected
+Dockerfile linguist-language=Dockerfile
