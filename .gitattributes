@@ -1,6 +1,21 @@
-*.css linguist-detectable=false
-*.html linguist-detectable=false
-*.htm linguist-detectable=false
-*.ejs linguist-detectable=false
-*.html linguist-language=plaintext
+# Ignore all files
+* linguist-vendored
+
+# Un-ignore C# files
+*.cs linguist-vendored=false
+*.cs linguist-detectable=true
+*.cs linguist-language=C#
+
+# Explicitly ignore HTML and CSS files
 *.html linguist-vendored=true
+*.html linguist-generated=true
+*.html linguist-documentation=true
+*.htm linguist-vendored=true
+*.htm linguist-generated=true
+*.htm linguist-documentation=true
+*.css linguist-vendored=true
+*.css linguist-generated=true
+*.css linguist-documentation=true
+*.ejs linguist-vendored=true
+*.ejs linguist-generated=true
+*.ejs linguist-documentation=true
