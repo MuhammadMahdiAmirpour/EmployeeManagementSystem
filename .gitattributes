@@ -2,25 +2,8 @@
 * binary
 *.html binary
 
-
-# Explicitly mark C# files as C#
-*.cs linguist-language=C# linguist-detectable=true
-
-# Mark Razor files as C#
-*.razor linguist-language=C# linguist-detectable=true
-
 # Force-ignore HTML and CSS files
 *.html linguist-language=none linguist-vendored=true linguist-generated=true linguist-documentation=true
 *.htm linguist-language=none linguist-vendored=true linguist-generated=true linguist-documentation=true
 *.css linguist-language=none linguist-vendored=true linguist-generated=true linguist-documentation=true
 *.ejs linguist-language=none linguist-vendored=true linguist-generated=true linguist-documentation=true
-
-# Add other file types you want to include
-Dockerfile linguist-language=Dockerfile linguist-detectable=true
-*.yml linguist-detectable=true
-*.yaml linguist-detectable=true
-*.json linguist-detectable=true
-*.md linguist-detectable=true
-*.sh linguist-detectable=true
-*.ps1 linguist-detectable=true
-# Add any other file types you want to include
